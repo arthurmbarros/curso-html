@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            /*
+            Medidas absolutas
+            cm, mm, in(polegadas), px(pixels)(recomendado), pt(ponto), pc(paica),
+
+            Medidas relativas
+            em (altura da letra M maiuscula)(recomendado), ex (altura da letra X), rem, vw (viewport), vh(altura da viewport),         %(percentual)
+
+            16px = 1em
+            */
+            font-size: 1.5em;
+        }
+
+        h1{ 
+            /* shorthand font -> Forma de unir várias caracteristicas de fonte em uma única linha.
+            Deve-se respeitar as seguintes ordens: font-style -> font-weight -> font-size -> font-family
+            */
+            font: italic bolder 3em 'work sans', sans-serif; 
+            
+        }
+
+        h2 {
+            font: bolder 3em 'work sans', sans-serif; 
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, assumenda neque voluptatem velit, blanditiis voluptate dolorem ab quo ut molestias unde! Dolorum illum nulla odit amet facilis at nisi labore!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt officiis dolor, autem repellendus minima id quibusdam aliquam voluptas! Nesciunt a sit modi, maiores fuga quidem praesentium blanditiis. Quos, blanditiis cupiditate. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi dicta nesciunt nostrum ipsa sit! Veniam distinctio quis nulla inventore reiciendis maiores et voluptate dolore eos ipsam, maxime dicta delectus impedit.</p>
+    <h2>Subtitulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel officiis accusamus voluptatibus fuga quibusdam! Facilis quasi delectus quos sunt quas accusantium, dicta minus nihil culpa suscipit eius, pariatur repellendus et?</p>
+    
+</body>
+</html>
