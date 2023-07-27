@@ -3,22 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body{
             height: 100vh;
             background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
-            background-position: center top;
-            background-repeat: no-repeat;
-            background-size: cover; /* Esse comando faz com que a imagem se adapte de acordo com o tamanho da janela do site cortando partes dessa imagem. */
+            background-position: center center;
+            background-repeat: repeat-y;
+            background-size: cover; /* Esse comando faz com que a imagem de fundo se adapte de acordo com o tamanho da janela do site cortando partes dessa imagem. */
+            background-attachment: fixed; /* Faz com que a imagem de fundo fique fixa mesmo rolando a pagina pra baixo. Ou seja, só o MAIN(texto central) irá rolar. A imagem irá permanecer fixa. */
 
-            /* background-size: contain;  Esse comando faz com que a imagem sempre seja exibida na tela idependente do tamanho da largura e altura da janela da página. */
+            /* background-size: contain;  Esse comando faz com que a imagem de fundo sempre seja exibida na tela idependente do tamanho da largura e altura da janela da página. */
+
+            /* Se eu quiser posso usar um SHORTHAND para simplificar o código utilizando a seguinte sequencia de comandos: BACKGROUND -- COLOR > IMAGE > POSITION > REPEAT > ATTACHMENT. Conforme feito abaixo: 
+
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed; */
+            
         }
 
         main{
             background-color: white;
-            width: 400px;
+            max-width: 400px; /* quebra de texo ao diminuir o a tela. */
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -29,6 +35,15 @@
 <body>
     <main>
         <h1>Teste de imagem de fundo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit eligendi amet repellendus ipsam numquam necessitatibus ut iure suscipit? Explicabo dolor a, animi enim quas corporis unde nulla ad laboriosam vero.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime in, animi excepturi alias obcaecati tempore dolore non ut nobis fugiat illo, dolores, rerum soluta dolorem. Inventore sit nisi nostrum quis.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati cum vero deleniti fugiat sequi quia mollitia placeat accusamus eius hic adipisci tempora non cumque, eum voluptatum animi nam saepe omnis.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit eligendi amet repellendus ipsam numquam necessitatibus ut iure suscipit? Explicabo dolor a, animi enim quas corporis unde nulla ad laboriosam vero.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime in, animi excepturi alias obcaecati tempore dolore non ut nobis fugiat illo, dolores, rerum soluta dolorem. Inventore sit nisi nostrum quis.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati cum vero deleniti fugiat sequi quia mollitia placeat accusamus eius hic adipisci tempora non cumque, eum voluptatum animi nam saepe omnis.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit eligendi amet repellendus ipsam numquam necessitatibus ut iure suscipit? Explicabo dolor a, animi enim quas corporis unde nulla ad laboriosam vero.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime in, animi excepturi alias obcaecati tempore dolore non ut nobis fugiat illo, dolores, rerum soluta dolorem. Inventore sit nisi nostrum quis.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati cum vero deleniti fugiat sequi quia mollitia placeat accusamus eius hic adipisci tempora non cumque, eum voluptatum animi nam saepe omnis.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit eligendi amet repellendus ipsam numquam necessitatibus ut iure suscipit? Explicabo dolor a, animi enim quas corporis unde nulla ad laboriosam vero.</p>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime in, animi excepturi alias obcaecati tempore dolore non ut nobis fugiat illo, dolores, rerum soluta dolorem. Inventore sit nisi nostrum quis.</p>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati cum vero deleniti fugiat sequi quia mollitia placeat accusamus eius hic adipisci tempora non cumque, eum voluptatum animi nam saepe omnis.</p>
