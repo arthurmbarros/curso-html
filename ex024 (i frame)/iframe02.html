@@ -13,13 +13,17 @@
             display: block; /* a combinação de desiplay block e margin auto centralizam o iframe na tela */
             margin: auto;
         }
+        p.erro{
+            background-color: red;
+        }
     </style>
 </head>
 <body>
     <h1>Teste com Iframe</h1>
     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam quod a accusamus. Quaerat alias suscipit esse minima! Quasi ducimus quo blanditiis amet praesentium, mollitia facere sit fuga repellat ipsam optio!</p>
 
-    <iframe src="pagina01.html" frameborder="0" height="500" width="500">
+    <iframe src="paginas extras/pagina01.html" frameborder="0" height="500" width="500">
+        <p class="erro">Infelizmente seu navegador não é compatível</p>
     ></iframe>  
 
     <iframe src="" frameborder="0"></iframe>
