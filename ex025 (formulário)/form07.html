@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="idest">Estado</label>
+            <select name="estado" id="idest">
+                <option selected> --- Escolha ---</option>
+                <optgroup label="Região Sudeste">
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                </optgroup>
+                <optgroup label="Região Nordeste">
+                    <option value="MA">Maranhão</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="BA">Bahia</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+                <!-- 
+                    Nesse caso, além de dar as opções de escolha pré determinadas na lista, o usuário terá o opção de digitar algo que não está nessa lista.
+                -->
+            <label for="idprof">Profissão</label>
+            <input type="text" name="prof" id="idprof" list="lstprof"> 
+            <datalist id="lstprof">
+                <option>Adminsitrador</option>
+                <option>Contador</option>
+                <option>Desenvolvedor</option>
+                <option>Despachante</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="idmsg">Mensagem: </label><br>
+            <textarea name="msg" id="idmsg" cols="30" rows="10" placeholder="Sua mensagem aqui"></textarea>
+            <!-- ATENÇÃO: Utilizar o METHOD: POST por causa da limitação de dados do METHOD: GET-->
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+</body>
+</html>
