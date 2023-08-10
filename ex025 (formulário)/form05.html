@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="idmas" value="M"> <label for="idmas">Masculino</label><br>
+            <input type="radio" name="sexo" id="idfem"  value="F" checked><label for="idfem">Feminino</label>
+            <!-- 
+                1 - O input tipo RADIO significa que o usuário poderá marcar a opção e não conseguirá mais desmarcar a não ser que escolha outra opção. Já o tipe CHECKBOX dá a opção de marcar e desmarcar quantas opções quiser.
+                2 - O name "sexo" foi o mesmo para as 2 opções para que uma marcação ficasse vinculada à outra. Obrigando o usuário a selecionar uma ou a outra opção.
+                3 - Ao colocar a função no input CHECKED , assim que iniciar a página essa opção já estará pré selecionada, ferramenta muito utilizada quando determinada opção estatisticamente é muito mais selecionada do que as outras.
+
+            -->
+
+        </fieldset>
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <input type="checkbox" name="fut" id="idfut"><label for="idfut">Futebol</label><br>
+            <input type="checkbox" name="bas" id="idbas"><label for="idbas">Basquete</label><br>
+            <input type="checkbox" name="ten" id="idten"><label for="idten">Tênis</label><br>
+            <input type="checkbox" name="Vol" id="idvol"><label for="idvol">Volei</label><br>
+            <input type="checkbox" name="nenhum" id="idnen" checked><label for="idnen">Nenhum</label><br>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+</body>
+</html>
