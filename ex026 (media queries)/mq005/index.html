@@ -7,9 +7,11 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media.css">
+    
     
 </head>
-<body>
+<body onresize="mudoutamanho()">
     <header>
         <h1>Meu site</h1>
         <span id="burguer" class="material-icons" onclick="clickmenu()">menu</span>
@@ -32,6 +34,15 @@
         </article>
     </main>
     <script>
+
+        function mudoutamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
         <!-- Esse comando em javascript faz com que o menu apareça ao clicar no menu hamburguer e desapareça ao clicar novamente-->
         function clickmenu(){
             if (itens.style.display == 'block') {
