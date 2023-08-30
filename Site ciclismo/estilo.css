@@ -6,14 +6,52 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
+
 .cabecalho{
     position: fixed;
     background-color: rgb(229, 160, 160);
     width: 100%;
     padding: 60px;
     text-align: center;
+    
 }
 
-section{
+.container {
+    display: flex;
+    flex-direction: row; /* Define a direção dos elementos */
+    justify-content: space-between; /* Alinha os elementos no espaço disponível */
+    background-color: gray;
+    background-image: url('imagens/foto1.jpg'); 
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
     padding-top: 150px;
+  }
+
+
+  div#caixa{
+    
+    background-color: aqua;
+    text-align: center;
+    height: 100px; /* altura */
+    width: 450px; /* largura */
+    border: 1px solid black; /* borda */
+    margin-top: 50px;
+    padding: 20px;
+ 
+}
+
+div#caixa:hover{ /* quando passar o mouse sobre a div ele receberá tais configurações */
+    background-color: blueviolet;
+    
+}
+
+a{
+    text-decoration: none;
+}
+  
+
+footer {
+    background-color: rgb(122, 112, 112);
 }
