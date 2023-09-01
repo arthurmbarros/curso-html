@@ -4,27 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site ciclismo</title>
-    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css">
+    <link rel="stylesheet" href="estilo/media.css">
 </head>
-<body>
-    <header class="cabecalho">
-        <h2>Registros de imagens das minhas provas disputadas</h2>
+
+<body onresize="mudoutamanho()">
+    <header>
+        <h1>Registros de imagens das minhas provas disputadas</h1>
+        <span id="burguer" class="material-icons" onclick="clickmenu()">menu</span>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+            </ul>
+        </menu>
     </header>
     
+
     <div class="container">
-        <div class="content">
-            <a href="http://www.cnn.com.br"><div id="caixa">2020 </div></a>
-            <a href="http://www.cnn.com.br"><div id="caixa">2021 </div></a>
-            <a href="http://www.cnn.com.br"><div id="caixa">2022 </div></a>
-            <a href="http://www.cnn.com.br"><div id="caixa">2023 </div></a>
+              
+        <div id="caixa">
+            <a id="link" href="2020.html">2020 <br></a> 
+            <a id="link" href="2021.html">2021 <br></a> 
+            <a id="link" href="2022.html">2022 <br></a> 
+            <a id="link" href="2023.html">2023</a> 
         </div>
+    
         
     </div>
+    
       
     <footer>
         <a href="https://api.whatsapp.com/send?phone=553183326414">
             <img src="imagens/logo-whatsapp-256.png" alt="WhatsApp">
         </a>
     </footer>
+    <script>
+
+        function mudoutamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
+        <!-- Esse comando em javascript faz com que o menu apareça ao clicar no menu hamburguer e desapareça ao clicar novamente-->
+        function clickmenu(){
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
