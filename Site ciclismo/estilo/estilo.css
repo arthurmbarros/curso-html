@@ -44,6 +44,14 @@ menu > ul > li > a {
 
 }
 
+menu {
+    display: none;
+}
+
+menu > ul {
+    list-style-type: none;
+}
+
 menu > ul > li > a:hover{
     background-color: gray;
 }
