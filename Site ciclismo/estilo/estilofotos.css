@@ -7,6 +7,8 @@
 }
 
 
+
+
 .cabecalho{
     position: fixed;
     background-color: rgb(229, 160, 160);
@@ -17,15 +19,19 @@
     
 }
 
-img{
-    padding-top: 150px;
 
-    width: 50%;
-}
+div.container {
+    
+    text-align: center;
+    
 
+  }
 
-
-
+  img {
+    display: block; /* Isso garante que a margem automática funcione */
+    margin: 0 auto; /* Margem automática à esquerda e à direita centraliza a imagem */
+    width: auto;
+  }
 
 
 footer {
@@ -33,4 +39,11 @@ footer {
     padding-top: 20px;
     padding-bottom: 20px;
     
+    
 }
+
+footer > a {
+    padding: 30px;
+   
+}
+

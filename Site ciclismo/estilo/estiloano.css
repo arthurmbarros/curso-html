@@ -7,16 +7,22 @@
 }
 
 
-.cabecalho{
+header{
     position: fixed;
-    background-color: rgb(229, 160, 160);
-    width: 15%;
-    padding: 40px;
-    text-align: left;
+    background-color: rgb(200, 202, 171);
+    width: 100%;
+    
     
 }
 
-.container {
+header>h1{
+    padding: 40px;
+    text-align: center;
+    
+}
+
+
+div.container {
     display: flex;
     flex-direction: row; /* Define a direção dos elementos */
     justify-content: space-between; /* Alinha os elementos no espaço disponível */
@@ -30,7 +36,7 @@
     padding-left: 50px;
   }
 
-.content {
+div.content {
     
 }
 
